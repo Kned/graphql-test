@@ -6,7 +6,7 @@ To run this project:
  - rails s
  - Go to http://localhost:3000/graphiql to test the api
  
-# Create Cser mutation
+# Create User mutation
 ```graphql
 mutation {
   addUser(
