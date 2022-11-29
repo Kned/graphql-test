@@ -41,7 +41,7 @@ mutation {
 }
 ```
 
-# List notes query
+# List Notes query
 ```graphql
 query {
   fetchNotes(
