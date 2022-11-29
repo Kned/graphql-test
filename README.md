@@ -1,24 +1,62 @@
 # README
+To run this project:
+ - required ruby-2.7.3
+ - bundle install
+ - rspec
+ - rails s
+ - Go to http://localhost:3000/graphiql to test the api
+ 
+# create user mutation
+```graphql
+mutation {
+  addUser(
+    input:{
+      params: {
+        name: "Henrique Fontoura2"
+      }
+    }
+  ){
+    user{
+      name
+    }
+  }
+}
+```
+# Create Note mutation
+```graphql
+mutation {
+  addNote(input: {params: {title: "Nota 0001", body: "Textao mano", userId: 1}}) {
+    note {
+      id
+      title
+      body
+      createdAt
+      user {
+        id
+        name
+        createdAt
+      }
+    }
+  }
+}
+```
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# List notes query
+```graphql
+query {
+  fetchNotes(
+    userId: 1 #optional filter
+  ) {
+    id
+    title
+    body
+    createdAt
+    user {
+      id
+      name
+      createdAt
+    }
+  }
+}
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
