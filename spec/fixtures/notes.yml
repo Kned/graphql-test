@@ -1,0 +1,32 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: Title1
+  body: Body1
+  user: fernando
+
+two:
+  title: Title2
+  body: Body2
+  user: eduardo
+
+three:
+  title: Title3
+  body: Body3
+  user: eduardo
+
+four:
+  title: Title4
+  body: Body4
+  user: eduardo
+
+five:
+  title: Title5
+  body: Body5
+  user: eduardo
+
+six:
+  title: Title6
+  body: Body6
+  user: eduardo
+
